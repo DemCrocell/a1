@@ -1,0 +1,11 @@
+<div class="form-group" ng-class="{'has-error': loginForm.login.$error.required && loginForm.$submitted}">
+  <label for="login">Логин</label>
+  <input name="login" id="login" class="form-control" ng-model="VmLogin.login" required>
+  <div class="help-block">Логин обязателен для заполнения</div>
+</div>
+<div class="form-group" ng-class="{'has-error': loginForm.password.$error.required && loginForm.$submitted}">
+  <label for="password">Пароль</label>
+  <input name="password" type="password" id="password" class="form-control" ng-model="VmLogin.password" required>
+  <div class="help-block">Пароль обязателен для заполнения</div>
+</div>
+<button type="submit" class="btn btn-primary">Войти</button>

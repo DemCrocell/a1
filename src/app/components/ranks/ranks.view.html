@@ -1,0 +1,21 @@
+<ul class="clearfix r-ranks-list">
+  <li ng-repeat="rank in VmRanks.ranksService.ranksList.items" class="r-ranks-list__item">
+    <a ui-sref="rank({id: rank.id})" ng-click="VmRanks.ranksService.setRank(rank.id)" class="clearfix">
+      <div class="col-xs-5">
+        <img src="{{rank.picture.small}}" class="img-rounded" width="100" height="100">
+      </div>
+      <div class="col-xs-7">
+        <div>Уровень {{rank.levelId}}</div>
+        <div>{{rank.name.en}}</div>
+        <div>{{rank.name.ru}}</div>
+        <div>{{rank.name.cn}}</div>
+      </div>
+    </a>
+  </li>
+</ul>
+<button class="glyphicon glyphicon-plus add-button" ng-click="VmRanks.open()"></button>
+
+
+<script type="text/ng-template" id="addRank.html">
+  <div change-rank></div>
+</script>

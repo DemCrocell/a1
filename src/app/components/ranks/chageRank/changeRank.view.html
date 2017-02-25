@@ -1,0 +1,32 @@
+<div class="modal-header">
+    <button class="close" type="button" ng-click="VmModal.cancel()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h3 class="modal-title" id="modal-title">{{VmChangeRank.ranksService.activeRank ? 'Редактирование ранга' : 'Создание нового ранга'}}</h3>
+</div>
+<div class="modal-body" id="modal-body">
+    <form name="rankForm" ng-submit="VmChangeRank.save()" novalidate>
+        <div class="form-group" ng-class="{'has-error': rankForm.inputEn.$error.required && rankForm.$submitted}">
+            <label for="inputEn">Название на английском</label>
+            <input class="form-control" id="inputEn" name="inputEn" ng-model="VmChangeRank.model.name.en" required>
+            <div class="help-block">Обязателен для заполнения</div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rankForm.inputRu.$error.required && rankForm.$submitted}">
+            <label for="inputRu">Название на русском</label>
+            <input class="form-control" id="inputRu" name="inputRu" ng-model="VmChangeRank.model.name.ru" required>
+            <div class="help-block">Обязателен для заполнения</div>
+        </div>
+        <div class="form-group" ng-class="{'has-error': rankForm.inputCn.$error.required && rankForm.$submitted}">
+            <label for="inputCn">Название на китайком</label>
+            <input class="form-control" id="inputCn" name="inputCn" ng-model="VmChangeRank.model.name.cn" required>
+            <div class="help-block">Обязателен для заполнения</div>
+        </div>
+        <div class="form-group" ng-class="rankForm.inputFile.$error.required && rankForm.$submitted">
+            <label for="inputFile">{{VmChangeRank.ranksService.activeRank ? 'Изменить изображение' : 'Добавить изображение'}}</label>
+            <input type="file" id="inputFile" name="inputFile" ng-required="!VmChangeRank.ranksService.activeRank"
+                   file-model="VmChangeRank.picture" required>
+            <div class="help-block">Вы не выбрали файл</div>
+        </div>
+        <button class="btn btn-primary" type="submit">Добавить</button>
+    </form>
+</div>

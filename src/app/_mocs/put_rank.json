@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "levelId": 900,
+  "picture": {
+    "big": "http://test.com/picture/big.png",
+    "small": "http://test.com/picture/small.png"
+  },
+  "name": {
+    "en": "EN String",
+    "ru": "RU string",
+    "cn": "CN string"
+  }
+}

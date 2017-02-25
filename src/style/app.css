@@ -1,0 +1,22 @@
+/* styles in src/style directory are applied to the whole page */
+
+body {
+  background: #336bb8;
+}
+
+a {
+  color: #03A9F4;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.ng-submitted .ng-empty + .help-block {
+  display: block;
+}
+
+.help-block {
+  display: none;
+}

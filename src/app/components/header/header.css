@@ -1,0 +1,21 @@
+.r-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.r-header__exit {
+    padding: .5em;
+    background-color: rgba(51, 51, 51, 0.15);
+    display: inline-block;
+    color: #fff;
+    transition: background .2s;
+}
+
+.r-header__exit:hover {
+    background-color: rgba(51, 51, 51, 0.3);
+    color: #fff;
+}

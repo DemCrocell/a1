@@ -1,0 +1,73 @@
+
+.r-ranks-list {
+    list-style: none !important;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.r-ranks-list__item {
+    padding: 5px;
+    width: 25%;
+    float: left;
+}
+.r-ranks-list__item > a {
+    display: block;
+    background-color: rgba(51, 51, 51, .25);
+    padding: 1em;
+    color: #fff;
+}
+.r-ranks-list__item > a:hover {
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .3);
+    color: #fff;
+}
+
+.add-button {
+    width: 50px;
+    line-height: 50px !important;
+    border-radius: 50%;
+    border: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, .15);
+    transition: background .2s;
+    position: absolute !important;
+    bottom: 1em;
+    top: inherit !important;
+    right: 1em;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, .4);
+    color: #fff;
+    outline: none;
+}
+
+.add-button:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btn-edit,
+.btn-delete,
+.btn-back {
+    padding: 0 !important;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.btn-edit:hover,
+.btn-delete:hover,
+.btn-back:hover,
+.btn-edit:focus,
+.btn-delete:focus,
+.btn-back:focus {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+.r-panel-button {
+    text-align: right;
+}
+.r-levelId {
+    font-size: 2em;
+}
+
+.r-rank-description {
+    padding: 1em;
+}

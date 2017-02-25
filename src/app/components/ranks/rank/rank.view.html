@@ -1,0 +1,26 @@
+<div class="r-panel-button">
+  <button type="button" class="btn btn-edit glyphicon glyphicon-pencil" title="Редактировать" ng-click="VmRank.open('editRank.html')"></button>
+  <button type="button" class="btn btn-delete glyphicon glyphicon-trash" title="Удалить" ng-click="VmRank.open('deleteRank.html', 'sm')"></button>
+</div>
+<div class="clearfix">
+  <div class="pull-left ">
+    <img src="{{VmRank.ranksService.activeRank.picture.big}}" class="img-rounded" width="400" height="400">
+  </div>
+  <div class="pull-left r-rank-description">
+    <div class="r-levelId">Уровень {{VmRank.ranksService.activeRank.levelId}}</div>
+    <div>{{VmRank.ranksService.activeRank.name.en}}</div>
+    <div>{{VmRank.ranksService.activeRank.name.ru}}</div>
+    <div>{{VmRank.ranksService.activeRank.name.cn}}</div>
+  </div>
+</div>
+<button ng-click="VmRank.back()" type="button" class="btn btn-back">
+  <i class="glyphicon glyphicon-chevron-left"></i> Назад
+</button>
+
+<script type="text/ng-template" id="editRank.html">
+  <div change-rank></div>
+</script>
+
+<script type="text/ng-template" id="deleteRank.html">
+  <div delete-rank></div>
+</script>

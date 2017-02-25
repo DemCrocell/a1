@@ -1,0 +1,57 @@
+{
+  "count": 0,
+  "items": [
+    {
+      "id": 1,
+      "levelId": 1,
+      "picture": {
+        "big": "/img/logo.png",
+        "small": "/img/logo.png"
+      },
+      "name": {
+        "en": "EN String",
+        "ru": "RU string",
+        "cn": "CN string"
+      }
+    },
+    {
+      "id": 2,
+      "levelId": 2,
+      "picture": {
+        "big": "/img/logo.png",
+        "small": "/img/logo.png"
+      },
+      "name": {
+        "en": "EN String",
+        "ru": "RU string",
+        "cn": "CN string"
+      }
+    },
+    {
+      "id": 3,
+      "levelId": 3,
+      "picture": {
+        "big": "/img/logo.png",
+        "small": "/img/logo.png"
+      },
+      "name": {
+        "en": "EN String",
+        "ru": "RU string",
+        "cn": "CN string"
+      }
+    },
+    {
+      "id": 4,
+      "levelId": 3,
+      "picture": {
+        "big": "/img/logo.png",
+        "small": "/img/logo.png"
+      },
+      "name": {
+        "en": "EN String",
+        "ru": "RU string",
+        "cn": "CN string"
+      }
+    }
+  ]
+}

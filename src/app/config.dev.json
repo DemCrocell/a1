@@ -1,0 +1,29 @@
+{
+  "routes": [
+    {
+      "state": "login",
+      "config": {
+        "template": "<div home></div>",
+        "url": "{dummyParam:[/]?}"
+      }
+    },
+    {
+      "state": "ranks",
+      "config": {
+        "template": "<div ranks></div>",
+        "url": "/ranks{dummyParam:[/]?}"
+      }
+    },
+    {
+      "state": "rank",
+      "config": {
+        "template": "<div rank></div>",
+        "url": "/ranks/{id}{dummyParam:[/]?}"
+      }
+    }
+  ],
+  "html5Mode": {
+    "enabled": true,
+    "requireBase": false
+  }
+}

@@ -1,0 +1,13 @@
+.r-home {
+  margin: 5em auto;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.5);
+  padding: 2em;
+  border-radius: .5em;
+  background-color: rgba(0, 0, 0, 0.2);
+  min-width: 380px;
+  max-width: 580px;
+}
+
+.r-home__head {
+  text-align: center;
+}
