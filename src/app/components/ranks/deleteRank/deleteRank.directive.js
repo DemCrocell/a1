@@ -1,10 +1,10 @@
-import deleteRankController from './deleteRank.controller';
+import DeleteRankController from './deleteRank.controller';
 
 const deleteRankDirective = () => {
 	return {
 		restrict: 'EA',
 		template: require('./deleteRank.view.html'),
-		controller: deleteRankController,
+		controller: DeleteRankController,
 		controllerAs: 'VmDeleteRank'
 	}
 };

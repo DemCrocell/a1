@@ -9,4 +9,4 @@ const HeaderDirective = () => {
 	}
 };
 
-export default HeaderDirective
+export default HeaderDirective;

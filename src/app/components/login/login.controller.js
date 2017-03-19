@@ -1,9 +1,8 @@
-class LoginController {
-	constructor(AuthService, $location) {
+export default class LoginController {
+	constructor(AuthService) {
 		this.login = '';
 		this.password = '';
 		this.authService = AuthService;
-		this.$inject = ['AuthService', '$location'];
 	}
 
 	submit() {
@@ -13,5 +12,5 @@ class LoginController {
 	
 }
 
-export default LoginController;
+LoginController.$inject = ['AuthService'];
 

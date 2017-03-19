@@ -1,7 +1,6 @@
-class deleteRankController {
+export default class DeleteRankController {
 	constructor(RanksService) {
 		this.ranksService = RanksService;
-		this.$inject = ['RanksService'];
 	}
 
 	delete() {
@@ -9,5 +8,5 @@ class deleteRankController {
 	};
 }
 
-export default deleteRankController;
+DeleteRankController.$inject = ['RanksService'];
 

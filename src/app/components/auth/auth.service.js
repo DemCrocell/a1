@@ -1,4 +1,5 @@
-class AuthService {
+
+export default class AuthService {
 	constructor($http, $location, $window, $httpBackend){
 		this.$window = $window;
 		this.$location = $location;
@@ -7,11 +8,6 @@ class AuthService {
 		this.accessToken = this.getToken();
 		this.fileUrl = this.getFileUrl();
 		this.validUntil = this.getValidUntil();
-		this.logout = () => {
-			this.deleteToken();
-			this.redir();
-		};
-		this.$inject = ['$http', '$location', '$window', '$httpBackend']
 	}
 
 	////////////
@@ -78,6 +74,11 @@ class AuthService {
 			error => {}
 		);
 	};
+
+	logout() {
+		this.deleteToken();
+		this.redir();
+	};
 }
 
-export default AuthService;
+AuthService.$inject = ['$http', '$location', '$window', '$httpBackend'];

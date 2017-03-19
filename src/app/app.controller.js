@@ -1,9 +1,6 @@
-class AppController {
+export default class AppController {
 	constructor(AuthService, $location) {
-
 		this.init(AuthService, $location);
-
-		this.$inject = ['AuthService', '$location'];
 	}
 
 	init(AuthService, $location) {
@@ -15,4 +12,4 @@ class AppController {
 	}
 }
 
-export default AppController;
+AppController.$inject = ['AuthService', '$location'];

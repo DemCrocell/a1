@@ -1,10 +1,9 @@
-class RanksController {
+export default class RanksController {
 	constructor($uibModal, RanksService) {
 		this.ranksService = RanksService;
 		this.$uibModal = $uibModal;
 
 		this.ranksService.setRank();
-		this.$inject = ['$uibModal', 'RanksService'];
 	}
 
 	open(){
@@ -20,5 +19,5 @@ class RanksController {
 	}
 }
 
-export default RanksController;
+RanksController.$inject = ['$uibModal', 'RanksService'];
 

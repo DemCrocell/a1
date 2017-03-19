@@ -1,9 +1,8 @@
-class RanksController {
+export default class RanksController {
 	constructor( RanksService, $uibModal, $window) {
 		this.ranksService = RanksService;
 		this.$uibModal = $uibModal;
 		this.$window = $window;
-		this.$inject = ['RanksService', '$uibModal', '$window'];
 	}
 	
 	back() {
@@ -20,5 +19,5 @@ class RanksController {
 	};
 }
 
-export default RanksController;
+RanksController.$inject = ['RanksService', '$uibModal', '$window'];
 

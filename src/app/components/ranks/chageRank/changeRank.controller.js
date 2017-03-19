@@ -1,10 +1,9 @@
-class ChangeRankController {
+export default class ChangeRankController {
 	constructor(AuthService, RanksService, $scope) {
 		this.ranksService = RanksService;
 		this.authService = AuthService;
 		this.$scope = $scope;
 		this.model = this.getModel();
-		this.$inject = ['AuthService', 'RanksService', '$scope'];
 	}
 
 	getModel() {
@@ -24,5 +23,5 @@ class ChangeRankController {
 	}
 }
 
-export default ChangeRankController;
+ChangeRankController.$inject = ['AuthService', 'RanksService', '$scope'];
 

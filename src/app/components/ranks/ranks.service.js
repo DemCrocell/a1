@@ -1,14 +1,11 @@
-class RanksService {
-	constructor($http, $location, $q, $window, $httpBackend, AuthService){
+export default class RanksService {
+	constructor($http, $location, $httpBackend, AuthService){
 		this.$http = $http;
-		this.$q = $q;
 		this.$location = $location;
 		this.$httpBackend = $httpBackend;
 		this.authService = AuthService;
 		this.activeRank = {};
 		this.getRanksList();
-
-		this.$inject = ['$http', '$location', '$q', '$window', '$httpBackend', 'AuthService']
 	}
 
 	getRanksList() {
@@ -130,4 +127,4 @@ class RanksService {
 	}
 }
 
-export default RanksService;
+RanksService.$inject = ['$http', '$location', '$httpBackend', 'AuthService'];

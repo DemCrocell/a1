@@ -22,6 +22,7 @@ angular
 /**
  * Components
  */
+
 require('./components/header/');
 require('./components/home/');
 require('./components/auth/');
