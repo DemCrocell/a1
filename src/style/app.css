@@ -21,3 +21,11 @@ footer {
 .help-block {
   display: none;
 }
+
+.has-error .help-block {
+  color: #dc6961;
+}
+
+.has-error .form-control {
+  border-color: #dc6961;
+}
